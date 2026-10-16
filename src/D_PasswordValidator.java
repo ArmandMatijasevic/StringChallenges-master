@@ -21,9 +21,12 @@ public class D_PasswordValidator {
     }
 
     public boolean isValidPassword(String password) {
-        /* TODO: your code goes here */
-
-        return true; // this is a temporary return to avoid errors
+        /* TODO: your code goes here */ // check for common variations of password, replacing o with 0, s with 5, a with 4
+        boolean valid = true;
+        if (password.contains("password")){
+            valid = false;
+        }
+        return valid; // this is a temporary return to avoid errors
     }
 
 }

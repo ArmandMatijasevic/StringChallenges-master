@@ -12,12 +12,15 @@ public class C1_HiddenWordFinder {
     }
 
     public C1_HiddenWordFinder() {
-        String sentence = "This is a test startHelloend string.";
+        String sentence = "This is a test startBlablaend string.";
         findHiddenWord(sentence);  // Output: Hidden word: Hello
     }
 
     public void findHiddenWord(String sentence) {
         /* TODO: your code goes here */
+        int first = sentence.indexOf("start");
+        int last = sentence.indexOf("end");
+        System.out.println("Hidden word: " + sentence.substring(first+5,last));
 
     }
 

@@ -16,7 +16,7 @@ public class B_HashtagExtractor {
     }
 
     public void extractHashtags(String post) {
-        /* TODO: your code goes here */
+
         int first = post.indexOf("#");
         int last = post.indexOf("!");
         System.out.println("Hashtags:" + post.substring(first,last));
