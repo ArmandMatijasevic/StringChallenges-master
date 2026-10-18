@@ -19,8 +19,10 @@ public class E_WordReverser {
         /* TODO: your code goes here */
         //find where every space is and separate each word with that, then assign
         //number to each letter and reverse number order, keeping it all case sensitive.
-
-
+        String[] eachWord = sentence.split(" ");
+        for (int i=0; i<=eachWord.length; i++){
+            eachWord.[i] = new String(i);
+        }
     }
 
 }
