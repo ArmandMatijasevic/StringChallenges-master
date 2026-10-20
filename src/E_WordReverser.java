@@ -17,12 +17,13 @@ public class E_WordReverser {
 
     public void reverseWords(String sentence) {
         /* TODO: your code goes here */
-        //find where every space is and separate each word with that, then assign
-        //number to each letter and reverse number order, keeping it all case sensitive.
-        String[] eachWord = sentence.split(" ");
-        for (int i=0; i<eachWord.length; i++){
-            //eachWord.[i] = new String(i);
-
+        String[] eachWord = sentence.split(" "); // splits up each word
+        for (int i=0; i<eachWord.length; i++){ // assigns numbers to each letter
+            String wordReverse = "";
+            for (int j=eachWord[i].length()-1; j>=0; j--){ // j is the reverse of i
+                 wordReverse += eachWord[i].charAt(j); // reverses each word
+            }
+            System.out.print(wordReverse + " ");
         }
     }
 

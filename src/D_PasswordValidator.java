@@ -23,10 +23,10 @@ public class D_PasswordValidator {
     public boolean isValidPassword(String password) {
         /* TODO: your code goes here */ // check for common variations of password, replacing o with 0, s with 5, a with 4
         boolean valid = false;
-        boolean hasNumber = password.matches(".*\\d.*");
+        boolean hasNumber = password.matches(".*\\d.*"); // checks if the password has and digits
         boolean hasUpperCase = true;
         String lowercase = password.toLowerCase(); // sets the entire this to lower case to help identify the word "password"
-        if (lowercase == password){
+        if (lowercase == password){ //if the lowercase version of the password is the same as the original password, it is not a valid password
             hasUpperCase = false;
         }
         if (hasNumber == true && hasUpperCase == true){

@@ -18,9 +18,9 @@ public class C1_HiddenWordFinder {
 
     public void findHiddenWord(String sentence) {
         /* TODO: your code goes here */
-        int first = sentence.indexOf("start");
-        int last = sentence.indexOf("end");
-        System.out.println("Hidden word: " + sentence.substring(first+5,last));
+        int first = sentence.indexOf("start"); // finds start
+        int last = sentence.indexOf("end"); // finds end
+        System.out.println("Hidden word: " + sentence.substring(first+5,last)); // displays the word in between start and end
 
     }
 

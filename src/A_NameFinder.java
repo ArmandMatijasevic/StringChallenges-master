@@ -19,7 +19,7 @@ public class A_NameFinder {
     public String findUsername(String email) {
         /* TODO: your code goes here */
         int stop = email.indexOf("@");
-        return email.substring(0, stop);
+        return email.substring(0, stop); // starts at the start of the email, stops at the @
     }
 
 }

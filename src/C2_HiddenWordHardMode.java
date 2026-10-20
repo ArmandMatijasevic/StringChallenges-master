@@ -28,10 +28,10 @@ public class C2_HiddenWordHardMode {
 
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                if (line.contains("*") && line.contains("~")) {
+                if (line.contains("*") && line.contains("~")) { // only scans the line if it has both a * and a ~ in it
                     int first = line.indexOf("*");
                     int last = line.indexOf("~");
-                    System.out.println("Hidden word: " + line.substring(first + 1, last));}
+                    System.out.println("Hidden word: " + line.substring(first + 1, last));} // displays the hidden words
 
             }
             scanner.close();
