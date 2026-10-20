@@ -16,9 +16,15 @@ public class B_HashtagExtractor {
     }
 
     public void extractHashtags(String post) {
-
+        String[] eachHashtags = post.split("#");
         int first = post.indexOf("#");
-        int last = post.indexOf("!");
+        int lastExclamation = post.indexOf("!", first);
+        int lastComma = post.indexOf(",", first);
+        int lastCollen= post.indexOf(":", first);
+        int lastSemiCollen = post.indexOf(";", first);
+        int lastSpace = post.indexOf(" ", first);
+        int lastQuestion = post.indexOf("?", first);
+        int last = lastSpace;
         System.out.println("Hashtags:" + post.substring(first,last));
     }
 
